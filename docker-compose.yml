@@ -1,0 +1,8 @@
+test:
+  build: .
+  environment:
+    PORT: 8080
+  ports:
+    - "2345:8080"
+  volumes:
+    - .:/go/src/davidkelley/go-test

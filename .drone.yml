@@ -1,0 +1,7 @@
+image: go1.2
+env:
+  - CGO_ENABLED=0
+  - GOOS=linux
+  - GOPATH=/var/cache/drone
+script:
+  - go build -a -installsuffix cgo -o main .
